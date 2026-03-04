@@ -167,7 +167,6 @@ body{
   flex-wrap:wrap;
   gap:40px;
 }
-
 .stats span{
   font-size:28px;
   font-weight:800;
@@ -176,7 +175,7 @@ body{
 
 /* SECTIONS */
 section{
-  padding:100px 0;
+  padding:120px 0;
   text-align:center;
 }
 
@@ -202,6 +201,45 @@ section{
 .portfolio-card:hover{
   transform:translateY(-8px);
   box-shadow:0 0 30px rgba(0,102,255,0.4);
+}
+
+.barbearia{
+  position: relative;
+  background:url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+
+.barbearia::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  border-radius:16px;
+}
+
+.barbearia *{
+  position:relative;
+  z-index:2;
+}
+
+.descricaoCards {
+  margin-top: 15px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.modelo{
+  margin-top: 15px;
+  font-size: 13px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.small{
+  padding:8px 18px;
+  font-size:12px;
+  margin-top:15px;
+  display:inline-block;
 }
 
 /* CTA */

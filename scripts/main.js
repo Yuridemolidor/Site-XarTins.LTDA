@@ -18,6 +18,11 @@ counters.forEach(counter => {
 });
 
 // Fundo com partículas simples
+window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 
