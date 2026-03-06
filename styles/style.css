@@ -221,6 +221,24 @@ section{
   z-index:2;
 }
 
+.dentista{
+  position: relative;
+  background:url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+
+.dentista::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  border-radius:16px;
+}
+
+.dentista *{
+  position:relative;
+  z-index:2;
+}
+
 .descricaoCards {
   margin-top: 15px;
   text-align: left;
